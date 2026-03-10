@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adarsh Pathak · CSE Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">ADMVPAT</a>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active-nav">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <p class="greet">👋 Hey, I'm</p>
+            <h1>Adarsh DN Pathak</h1>
+            <div class="typed-container">
+              <span class="static-text">I'm a </span>
+              <span id="typed-role" class="typed-role"></span>
+            </div>
+            <p class="hero-desc">Computer Science student who actually enjoys building things. I write code that works, looks decent, and solves real problems.</p>
+            <div class="hero-btns">
+              <a href="#projects" class="btn primary-btn"><i class="fas fa-arrow-right"></i> See my work</a>
+              <a href="Adarsh_resume.pdf" class="btn outline-btn" download><i class="fas fa-download"></i> Resume</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="portrait-frame">
+              <img src="portrait.jpeg" alt="Adarsh Pathak" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="portrait-placeholder"><i class="fas fa-user"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Second-year CSE student who figured out early that copying code isn't the same as understanding it. I've built a few things from scratch — a student management system, a weather app, and a task manager that I actually use. I like Python, clean frontends, and figuring out why something broke at 2am.</p>
+            <ul class="bullet-list">
+              <li><i class="fas fa-circle"></i> Built multiple side projects</li>
+              <li><i class="fas fa-circle"></i> Python problem solver </li>
+              <li><i class="fas fa-circle"></i> Git comfortable</li>
+            </ul>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-card"><span class="stat-num">2+</span> years coding</div>
+            <div class="stat-card"><span class="stat-num">10+</span> GitHub repos</div>
+            <div class="stat-card"><span class="stat-num">4+</span> shipped projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <i class="fab fa-html5 skill-icon"></i>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, responsive design</p>
+            <div class="skill-tags">
+              <span>flexbox</span>
+              <span>grid</span>
+              <span>DOM</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <i class="fab fa-python skill-icon"></i>
+            <h3>Backend</h3>
+            <p>Python, JavaScript, REST APIs</p>
+            <div class="skill-tags">
+              <span>Django</span>
+              <span>JWT</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>Database</h3>
+            <p>MySQL</p>
+            <div class="skill-tags">
+              <span>queries</span>
+              <span>design</span>
+              <span>nosql</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <i class="fas fa-code-branch skill-icon"></i>
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code</p>
+            <div class="skill-tags">
+              <span>bash</span>
+              <span>npm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-header">
+              <i class="fas fa-graduation-cap project-icon"></i>
+              <h3>Student Management</h3>
+            </div>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Django</span>
+            </div>
+            <p class="card-desc">Desktop app with full CRUD, enrollment tracking, and search. Built with MySQL connector and modular architecture.</p>
+            <div class="card-links">
+              <a href="https://github.com/adarsh-pathak-2006/College_admission_site" class="icon-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <i class="fas fa-cloud-sun project-icon"></i>
+              <h3>Tic TAC Toe Game</h3>
+            </div>
+            <div class="tech-badges">
+              <span>JavaScript</span>
+              <span>CSS</span>
+            </div>
+            <p class="card-desc">Has an interactive design which is easy to play with friends. Built in vanilla JavaScript and has clean frontend.</p>
+            <div class="card-links">
+              <a href="https://github.com/adarsh-pathak-2006/tic-tac-toe" class="icon-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+              <a href="https://tic-tac-toe11.vercel.app/" class="icon-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <i class="fas fa-tasks project-icon"></i>
+              <h3>Task Manager App</h3>
+            </div>
+            <div class="tech-badges">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <p class="card-desc">Persistent storage, Built good concept understanding JavaScript. Actually use this daily.</p>
+            <div class="card-links">
+              <a href="https://github.com/adarsh-pathak-2006/Task_app" class="icon-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+              <a href="https://taskappnew.vercel.app/" class="icon-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p><i class="fas fa-envelope"></i> adarshpathak2006@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +91 7379075061</p>
+            <p><i class="fas fa-map-marker-alt"></i> Varanasi, India</p>
+            <div class="contact-social">
+              <a href="https://github.com/adarsh-pathak-2006"><i class="fab fa-github"></i></a>
+              <a href="www.linkedin.com/in/adarsh-pathak-6385333b6"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="Email address" required>
+            <textarea name="message" id="message" rows="4" placeholder="What's up?" required></textarea>
+            <span class="form-error" id="formError"></span>
+            <button type="submit" class="btn primary-btn submit-btn"><i class="fas fa-paper-plane"></i> Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Adarsh DN Pathak — built with <i class="fas fa-heart"></i> in Varanasi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
